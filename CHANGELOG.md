@@ -1,3 +1,12 @@
+## [0.1.2](https://github.com/limaofeng/umi-plugin-app/compare/v0.1.1...v0.1.2) (2021-07-19)
+
+
+### Bug Fixes
+
+* 引用关系修复 ([3dd1d89](https://github.com/limaofeng/umi-plugin-app/commit/3dd1d893439dc9b1d9360dad7c2c3ff165ac947f))
+
+
+
 ## [0.1.1](https://github.com/limaofeng/umi-plugin-app/compare/v0.1.0...v0.1.1) (2021-07-19)
 
 
