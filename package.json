@@ -1,4 +1,6 @@
 {
+  "version": "0.1.0",
+  "license": "MIT",
   "name": "@asany/umi-plugin-app",
   "main": "lib/index.js",
   "description": "",
