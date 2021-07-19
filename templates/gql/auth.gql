@@ -1,0 +1,50 @@
+mutation loginByWeiXin($code: String!) {
+  login(loginType: weixin, authCode: $code) {
+    uid
+    name
+    token
+    type
+    authoritys
+  }
+}
+
+mutation loginByDingtalk($code: String!) {
+  login(loginType: dingtalk, authCode: $code) {
+    uid
+    name
+    token
+    type
+    authoritys
+  }
+}
+mutation loginByUsername($username: String, $password: String) {
+  login(username: $username, password: $password) {
+    uid
+    name
+    token
+    type
+    authoritys
+  }
+}
+query viewer {
+  viewer {
+    uid
+    name
+    title
+    avatar
+    email
+    jobNumber
+    signature
+    group
+    phone
+    authoritys
+    token
+    permissions {
+      permission {
+        id
+      }
+      securityType
+      resource
+    }
+  }
+}

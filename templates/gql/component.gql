@@ -1,0 +1,15 @@
+query components($filter: ComponentFilter) {
+  components(filter: $filter) {
+    id
+    name
+    type
+    template
+    platforms
+    props {
+      name
+      label
+      defaultValue
+    }
+    template
+  }
+}

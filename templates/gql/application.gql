@@ -1,0 +1,95 @@
+query getApplication($id: ID!) {
+  app: application(id: $id) {
+    ...ApplicationInfo
+    rootRoute: route(path: "root") {
+      ...RouteParts
+      __typename
+    }
+    loginRoute: route(path: "login") {
+      ...RouteParts
+      __typename
+    }
+    layoutRoute: route(path: "layout") {
+      ...RouteParts
+      __typename
+    }
+    configuration {
+      ezoffice {
+        id
+        name
+        description
+        configuration {
+          id
+          host
+        }
+      }
+      variables {
+        key
+        value
+      }
+    }
+    routes {
+      ...RouteParts
+    }
+    organization {
+      id
+      name
+    }
+  }
+}
+query getRoute($id: ID!) {
+  route(id: $id) {
+    ...RouteParts
+  }
+}
+subscription subscibeUpdateRoute {
+  updateRoute {
+    id
+    name
+    component {
+      id
+      template
+      props
+    }
+  }
+}
+fragment ApplicationInfo on Application {
+  id
+  name
+  description
+  enabled
+  logo
+  path
+  dingtalkIntegration
+  ezofficeIntegration
+}
+fragment RouteParts on Route {
+  id
+  name
+  path
+  type
+  authorized
+  authority
+  hideInMenu
+  hideChildrenInMenu
+  hideInBreadcrumb
+  redirect
+  component {
+    id
+    props
+    template
+    routeWrapper {
+      id
+      props
+      template
+    }
+  }
+  icon
+  index
+  enabled
+  parent {
+    id
+    path
+  }
+  configuration
+}
