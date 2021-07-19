@@ -32,6 +32,10 @@
       "git add"
     ]
   },
+  "dependencies": {
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
