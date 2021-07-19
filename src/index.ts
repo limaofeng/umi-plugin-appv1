@@ -20,7 +20,7 @@ const cenerateFile = (api: IApi, fileName: string) =>
   });
 
 export default function (api: IApi) {
-  api.logger.info('use @whir/umi-plugin-app');
+  api.logger.info('use @asany/umi-plugin-app');
 
   api.describe({
     key: 'app',

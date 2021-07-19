@@ -1,4 +1,4 @@
-import { LibraryManager } from "@whir/arsenal";
+import { LibraryManager } from "@asany/arsenal";
 
 // 加载默认组件库
 LibraryManager.loadDefaultLibrarys();
