@@ -1,4 +1,4 @@
-import { LibraryManager } from "@asany/arsenal";
+import { LibraryManager } from "@asany/components";
 
 // 加载默认组件库
 LibraryManager.loadDefaultLibrarys();

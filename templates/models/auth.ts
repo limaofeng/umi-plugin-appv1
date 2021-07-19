@@ -5,7 +5,7 @@ import { Effect, Reducer, Subscription } from 'umi';
 import { client } from '../../apollo';
 import tokenHelper from '../../apollo/TokenHelper';
 import { viewer as LOAD_CURRENTUSER } from '../gql/auth.gql';
-import { reloadAuthorized } from '@asany/arsenal';
+import { reloadAuthorized } from '@asany/components';
 
 export function getPageQuery() {
   return parse(window.location.href.split('?')[1]);

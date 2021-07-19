@@ -9,7 +9,7 @@ import { client } from '../apollo';
 import ExtDvaContainer from './ExtDvaContainer';
 import { getApplication as GET_APPLICATION, subscibeUpdateRoute as SUBSCIBE_UPDATEROUTE, getRoute as GET_ROUTE } from './gql/application.gql';
 import { setCurrentApplication } from './models/global';
-import { AppManager, EnvironmentManager } from '@asany/arsenal';
+import { AppManager, EnvironmentManager } from '@asany/components';
 
 const logging = process.env.NODE_ENV === 'development';
 
