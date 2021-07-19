@@ -67,6 +67,7 @@
     "pre-commit": "lint-staged"
   },
   "files": [
-    "lib"
+    "lib",
+    "templates"
   ]
 }
