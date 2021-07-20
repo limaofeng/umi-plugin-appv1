@@ -13,27 +13,8 @@ query getApplication($id: ID!) {
       ...RouteParts
       __typename
     }
-    configuration {
-      ezoffice {
-        id
-        name
-        description
-        configuration {
-          id
-          host
-        }
-      }
-      variables {
-        key
-        value
-      }
-    }
     routes {
       ...RouteParts
-    }
-    organization {
-      id
-      name
     }
   }
 }
@@ -59,9 +40,6 @@ fragment ApplicationInfo on Application {
   description
   enabled
   logo
-  path
-  dingtalkIntegration
-  ezofficeIntegration
 }
 fragment RouteParts on Route {
   id
@@ -76,13 +54,7 @@ fragment RouteParts on Route {
   redirect
   component {
     id
-    props
     template
-    routeWrapper {
-      id
-      props
-      template
-    }
   }
   icon
   index
@@ -91,5 +63,4 @@ fragment RouteParts on Route {
     id
     path
   }
-  configuration
 }

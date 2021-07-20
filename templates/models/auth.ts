@@ -191,7 +191,8 @@ const AuthModel: AuthModelType = {
         });
         const json = localStorage.getItem('loginCredentials');
         if (!json) {
-          throw '未发现 Token 信息'
+          yield put({ type: 'redirect' });
+          return;
         }
         const loginCredentials = JSON.parse(json);
         // 获取凭证
