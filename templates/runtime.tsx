@@ -75,7 +75,7 @@ async function loadRoutes() {
     },
   ];
 
-  require('./autoImportLibrary');
+  await import('./autoImportLibrary').default;
 
   const env = EnvironmentManager.currentEnvironment();
 
