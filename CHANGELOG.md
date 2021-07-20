@@ -1,3 +1,12 @@
+## [0.1.4](https://github.com/limaofeng/umi-plugin-app/compare/v0.1.3...v0.1.4) (2021-07-20)
+
+
+### Bug Fixes
+
+* 去掉报错字段 ([3e9033d](https://github.com/limaofeng/umi-plugin-app/commit/3e9033dcd91bdd41f25d57b13830f280985f3b52))
+
+
+
 ## [0.1.3](https://github.com/limaofeng/umi-plugin-app/compare/v0.1.2...v0.1.3) (2021-07-19)
 
 
