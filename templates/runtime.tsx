@@ -60,22 +60,7 @@ async function loadRoutes() {
 
   setCurrentApplication(app);
 
-  // const { data: { components } } = await client.query({
-  //   query: GET_COMPONENTS,
-  // });
-
-  const components = [
-    {
-      id: 'com.thuni.his.demo.layout.BasicLayout',
-      name: '测试配置组件1',
-      platforms: ['PC'],
-      props: [],
-      template: 'com.thuni.his.layout.BasicLayout',
-      type: 'Config',
-    },
-  ];
-
-  await import('./autoImportLibrary').default;
+  await import('./autoImportLibrary');
 
   const env = EnvironmentManager.currentEnvironment();
 
