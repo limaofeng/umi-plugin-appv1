@@ -70,26 +70,6 @@ async function loadRoutes() {
   extraRoutes = AppManager.transform(app.routes);
 
 
-  client.subscribe({
-    query: SUBSCIBE_UPDATEROUTE,
-  }).subscribe({
-    async next ({ data }) {
-      if(!data.updateRoute){
-        console.error('error data -> skip ', data.updateRoute);
-        return;
-      }
-      // TODO 需要判断是否存在与 AppManager 中
-      const {
-        data: { route },
-      } = await client.query({
-        query: GET_ROUTE,
-        variables: { id: data.updateRoute.id },
-        fetchPolicy: 'no-cache'
-      });
-      AppManager.updateRoute(route);
-    }
-  });
-
 }
 
 export const patchRoutes = ({ routes }: any) => {
