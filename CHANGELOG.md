@@ -1,3 +1,12 @@
+## [0.1.7](https://github.com/limaofeng/umi-plugin-app/compare/v0.1.6...v0.1.7) (2021-08-18)
+
+
+### Features
+
+* 将 AppManager 逻辑，迁移到 umi-plugin-app ([#1](https://github.com/limaofeng/umi-plugin-app/issues/1)) ([0e9659a](https://github.com/limaofeng/umi-plugin-app/commit/0e9659a508a70a0ed3019c5e9045dc9e79a17545))
+
+
+
 ## [0.1.6](https://github.com/limaofeng/umi-plugin-app/compare/v0.1.5...v0.1.6) (2021-08-18)
 
 
