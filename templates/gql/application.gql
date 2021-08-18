@@ -1,17 +1,14 @@
 query getApplication($id: ID!) {
   app: application(id: $id) {
     ...ApplicationInfo
-    rootRoute: route(path: "root") {
+    rootRoute {
       ...RouteParts
-      __typename
     }
-    loginRoute: route(path: "login") {
+    loginRoute {
       ...RouteParts
-      __typename
     }
-    layoutRoute: route(path: "layout") {
+    layoutRoute {
       ...RouteParts
-      __typename
     }
     routes {
       ...RouteParts
