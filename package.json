@@ -33,8 +33,6 @@
     ]
   },
   "dependencies": {
-    "react-dnd": "^14.0.2",
-    "react-dnd-html5-backend": "^14.0.0",
     "redux-logger": "^3.0.6",
     "redux-persist": "^6.0.0"
   },
@@ -63,6 +61,8 @@
     "puppeteer": "^1.20.0",
     "query-string": "^6.11.1",
     "react": "^16.12.0",
+    "react-dnd": "^14.0.2",
+    "react-dnd-html5-backend": "^14.0.0",
     "react-dom": "^16.12.0",
     "react-test-renderer": "^16.9.0",
     "test-umi-plugin": "^0.1.0",
