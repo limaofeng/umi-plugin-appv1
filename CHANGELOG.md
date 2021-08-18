@@ -1,3 +1,12 @@
+## [0.1.5](https://github.com/limaofeng/umi-plugin-app/compare/v0.1.4...v0.1.5) (2021-08-18)
+
+
+### Bug Fixes
+
+* 优化 autoImportLibrary 引入方式 ([8c591b0](https://github.com/limaofeng/umi-plugin-app/commit/8c591b0d6ce9864a764a57d4015730335d9f9712))
+
+
+
 ## [0.1.4](https://github.com/limaofeng/umi-plugin-app/compare/v0.1.3...v0.1.4) (2021-07-20)
 
 
