@@ -1,3 +1,12 @@
+## [0.1.6](https://github.com/limaofeng/umi-plugin-app/compare/v0.1.5...v0.1.6) (2021-08-18)
+
+
+### Bug Fixes
+
+* 修复查询语句错误 ([6e168be](https://github.com/limaofeng/umi-plugin-app/commit/6e168bed44c7e20c4b541ee361ba15a69b8703bf))
+
+
+
 ## [0.1.5](https://github.com/limaofeng/umi-plugin-app/compare/v0.1.4...v0.1.5) (2021-08-18)
 
 
